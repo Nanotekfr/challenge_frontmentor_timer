@@ -14,7 +14,7 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://nanotekfr.github.io/launch_stream/)
 
 ## My process
 
