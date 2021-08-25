@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  
-  <title>Frontend Mentor | Launch countdown timer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
+    <title>Frontend Mentor | Launch countdown timer</title>
   </head>
   <body>
     <header>
       <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/Nanotekfr">NanotekFR</a>.
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Nanotekfr">NanotekFR</a>.
       </div>
     </header>
     <div class="container">
       <div class="stars">
-        <img src="images/bg-stars.svg" alt="">
+        <img src="images/bg-stars.svg" alt="" />
       </div>
       <h1>We're launching soon</h1>
       <div class="clock">
         <div>
+          <p id="days">{time}</p>
           <h3>Days</h3>
-          <p>{time}</p>
         </div>
         <div>
+          <p id="hours">{time}</p>
           <h3>Hours</h3>
-          <p>{time}</p>
         </div>
         <div>
+          <p id="minutes">{time}</p>
           <h3>Minutes</h3>
-          <p>{time}</p>
         </div>
         <div>
+          <p id="seconds">{time}</p>
           <h3>Seconds</h3>
-          <p>{time}</p>
         </div>
       </div>
-    </div>
-    <div class="social">
-      <ul>
-        <li>
-          <img src="images/icon-facebook.svg" alt=""></img>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <img src="images/icon-instagram.svg" alt=""></img>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <img src="images/icon-pinterest.svg" alt=""></img>
-        </li>
-      </ul>
-    </div>
-
-    <div class="hills">
-      <img src="images/pattern-hills.svg" alt="">
-    </div>
-    <footer>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/Nanotekfr">NanotekFR</a>.
+      <div class="social">
+        <ul>
+          <li>
+            <a href="https://www.google.com/" title="Ceci est un lien image HTML">
+              <img src="images/icon-facebook.svg" alt=""/>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/" title="Ceci est un lien image HTML">
+              <img src="images/icon-instagram.svg" alt=""/>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/" title="Ceci est un lien image HTML">
+              <img src="images/icon-pinterest.svg" alt=""/>
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
+
+      <div class="hills">
+        <img src="images/pattern-hills.svg" alt="" />
+      </div>
+    </div>
+    <footer></footer>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
