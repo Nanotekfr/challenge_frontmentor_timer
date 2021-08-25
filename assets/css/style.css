@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.stars {
+  position: absolute;
+}
+
+.hills {
+  position: absolute;
+  bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  cursor: grab;
+}
+
+header {
+  background-color: hsl(235, 16%, 14%);
+  color: white;
+}
+
+footer {
+  background-color: hsl(235, 16%, 14%);
+  color: white;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+  background-color: hsl(235, 16%, 14%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.container h1 {
+  color: white;
+  font-size: 54px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.clock div {
+  margin: 10px;
+}
+
+.clock p {
+  padding: 20px;
+  background-color: hsl(236, 21%, 26%);
+  color: hsl(345, 95%, 68%);
+  font-size: 50px;
+  border-radius: 5px;
+}
+
+.clock h3 {
+  color: hsl(237, 18%, 59%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.social {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%);
+}
+
+.social ul {
+  display: flex;
+}
+
+.social ul li {
+  margin: 0 20px;
+}
+
+a img:hover {
+  filter: grayscale(1) brightness(2);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 350px) and (max-width: 480px){
+  * {
+    overflow: hidden;
+  }
+  .container {
+    min-height: 100vh;
+  }
+  .container h1{
+    font-size: 14px;
+  }
+  .clock h3 {
+    font-size: 14px;
+  }
+  .clock p {
+    font-size: 14px;
+  }
+  .stars img,
+  .hills img {
+    width: 1920px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .stars img,
+  .hills img {
+    width: 1600px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .stars img,
+  .hills img {
+    width: 1920px;
+  }
+}
