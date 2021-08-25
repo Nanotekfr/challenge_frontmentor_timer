@@ -1,0 +1,112 @@
+@import url('https://fonts.google.com/specimen/Red+Hat+Text');
+
+* { padding: 0; margin: 0; box-sizing: border-box;}
+
+ul {
+  list-style: none;
+}
+
+.stars {
+  position: absolute;
+}
+
+.hills {
+  position: absolute;
+  bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-color: hsl(235, 16%, 14%);
+  color: white;
+}
+
+footer {
+  background-color: hsl(235, 16%, 14%);
+  color: white;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  background-color: hsl(235, 16%, 14%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.container h1 {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.clock div {
+  margin: 10px;
+}
+
+.clock p {
+  padding: 20px;
+  background-color: teal;
+  color: hsl(345, 95%, 68%);
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.clock h3 {
+  color: hsl(237, 18%, 59%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.social {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%);
+}
+
+.social ul {
+  display: flex;
+}
+
+.social ul li {
+  margin: 0 20px;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 1440px) {
+  .stars img, .hills img {
+    width: 1600px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .stars img, .hills img {
+    width: 1920px;
+  }
+}
